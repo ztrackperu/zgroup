@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contenido{
+	height: 3508px;
+    width:2480px ;
+    border:#CF0;
+	text-align:justify;	
+    page-break-before:always;
+   
+	
+}
+

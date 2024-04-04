@@ -1,0 +1,22 @@
+{
+  "name": "panelv2",
+  "description": "Intranet ZGROUP",
+  "main": "index.js",
+  "authors": [
+    "ZGROUP"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.redirect": "^1.0.6",
+    "raphael": "raphael.js#^2.2.7",
+    "sb-admin-2": "*"
+  }
+}

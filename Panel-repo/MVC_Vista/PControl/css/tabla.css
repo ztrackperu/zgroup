@@ -1,0 +1,74 @@
+.cabecera {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #003366;
+	padding: 4px;
+}
+
+.CabeceraNegra {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#FFFFFF;
+	background-color:#666666;
+	padding: 2px;
+}
+
+.CabeceraGrisClaro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color:#FFFFFF;
+	background-color:#999999;
+	padding: 2px;
+}
+
+.fondoGrisTabla {
+	background-color: #EFEFEF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #666666;
+	padding: 3px;
+}
+.fondoBlancoTabla {
+	background-color: #FFFFFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #666666;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+.fondoRojo {
+	background-color: #003366;
+}
+.fondoAzul {
+	background-color: #156A8D;
+	height: 15px;
+}
+.btnAgregar{
+  background: url(../images/accion/Add_Int.gif) no-repeat;
+/*  display: block;*/
+  cursor:hand;
+  padding: 6px 3px 6px 18px;
+  FONT: 13pt Verdana, Arial, Helvetica, sans-serif; 
+  COLOR: #156A8D;
+  background-color: #FFFFFF;
+}
+
+.btnQuitar{
+  background: url(../images/accion/Del_Int.gif) no-repeat;
+/*  display: block;*/
+  cursor:hand;
+  padding: 6px 3px 6px 18px;
+  FONT: 13pt Verdana, Arial, Helvetica, sans-serif; 
+  COLOR: #156A8D;
+  background-color: #FFFFFF;
+}.bordeazul {
+	border: 1px solid #023536;
+}

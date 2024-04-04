@@ -1,0 +1,13 @@
+@charset "utf-8";
+.imagen {
+height: 0;
+width: 0;
+position: absolute;
+}
+normal.css
+.imagen {
+height: 10;
+width: 10;
+position: absolute;
+}
+

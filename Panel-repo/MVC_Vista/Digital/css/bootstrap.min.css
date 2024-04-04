@@ -1,0 +1,31 @@
+/*!
+ * Bootstrap v3.1.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
+a{	color: #3D4670;
+	text-decoration: none
+}a:hover,a:focus{
+	color: #999;
+	text-decoration: underline
+}a:focus{
+	/*outline: thin dotted;*/
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	color: #999999;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: #3D4670
+}p{margin:0 0 10px;}
+
+
+@media (min-width:768px){table{font-size:20px;width:410px;}}
+@media (min-width: 480px) and (max-width: 767px) {table{font-size:17px;width:200px;}}
+@media (max-width: 479px) {table{font-size:15px;width:120px;}.pintar{width:120px;height:110px;}}

@@ -1,0 +1,13 @@
+const PANELV2_ROOT = process.cwd();
+const PANELV2_SRC = PANELV2_ROOT + '/src';
+const PANELV2_DIST = PANELV2_ROOT + '/dist';
+const NODEMOUDLES_PATH = PANELV2_ROOT + '/node_modules';
+const BOWER_PATH = PANELV2_ROOT + '/bower_components';
+
+module.exports = {
+    PANELV2_ROOT: PANELV2_ROOT,
+    PANELV2_SRC: PANELV2_SRC,
+    PANELV2_DIST: PANELV2_DIST,
+    NODEMOUDLES_PATH: NODEMOUDLES_PATH,
+    BOWER_PATH: BOWER_PATH
+};

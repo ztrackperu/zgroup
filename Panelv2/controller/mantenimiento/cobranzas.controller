@@ -1,0 +1,85 @@
+<?php
+//ini_set('error_reporting',0);//para xamp
+date_default_timezone_set('America/Bogota'); 
+require_once 'model/mantenimiento/manmodmarcaM.php';
+require_once 'model/funciones.php';
+require_once 'model/maestros/maestrosM.php';
+//include('../../assets/scripts/Funciones.php');
+require_once 'model/login/loginM.php';//usuario reg,upd,elim,etc  
+class cobranzascontroller{
+	private $model;
+	private $maestro;
+
+	public function __CONSTRUCT(){
+		$this->model = new Modmarca();
+		$this->maestro = new Maestros();
+		$this->login = new Login();
+	}
+	public function ListarTodos(){
+		require_once 'view/principal/header.php';		
+		require_once 'view/principal/principal.php';
+		require_once 'view/mantenimiento/adminmodmarca.php';
+		require_once 'view/principal/footer.php';
+	}	
+	 public function AgregarModMar(){
+			 $correlativoid = $this->model->ObtenerUltIdMarca();
+            if(!empty($correlativoid)){
+                $idcodi = $correlativoid[0]->id+1;
+				            }
+			 $correlativoid2 = $this->model->ObtenerUltIdMarca2();
+            if(!empty($correlativoid2)){
+                $idcodi2 = $correlativoid2[0]->id+1;
+				            }
+			$correlativoid3 = $this->model->ObtenerUltIdModelo();
+            if(!empty($correlativoid3)){
+                $idcodi3 = $correlativoid3[0]->id+1;
+				            }					
+			$CodMarca=str_pad($idcodi,3,"0",STR_PAD_LEFT);
+			$CodMarca2=str_pad($idcodi2,3,"0",STR_PAD_LEFT);
+			$CodMarca3=str_pad($idcodi3,3,"0",STR_PAD_LEFT);
+			$Marca=new Modmarca();
+			$Marca->IN_CODI  =$CodMarca;
+			$Marca->IN_CODI2  =$CodMarca2;
+			$Marca->IN_CODI3  =$CodMarca3;
+			$Marca->c_codmar2  =$_REQUEST['tip_equipo'];
+			$Marca->descripcion  =strtoupper($_REQUEST['descripcion']);
+			$mensaje="Registrado Correctamente";
+			if($_REQUEST['tip_equipo']=="002" && $_REQUEST['tip_mm']=="001" ){//reefer -marca
+				$this->model->AgregarMarcasReefer($Marca);
+				print "<script>alert('$mensaje')</script>";
+			}
+			else if($_REQUEST['tip_equipo']=="001" && $_REQUEST['tip_mm']=="001" ){//dry -marca
+				$this->model->AgregarMarcasDry($Marca);
+				print "<script>alert('$mensaje')</script>";
+			}
+			else if($_REQUEST['tip_equipo']=="004" && $_REQUEST['tip_mm']=="001" ){//carreta -marca
+				$this->model->AgregarMarcasCarreta($Marca);
+				print "<script>alert('$mensaje')</script>";
+			}
+			else if($_REQUEST['tip_equipo']=="021" && $_REQUEST['tip_mm']=="001" ){//MAQUINA -marca
+				$this->model->AgregarMarcasMaquina($Marca);
+				print "<script>alert('$mensaje')</script>";
+			}
+			else if($_REQUEST['tip_equipo']=="021" && $_REQUEST['tip_mm']=="002" ){//MAQUINA -modelo
+				$this->model->AgregarModeloMaquina($Marca);
+				print "<script>alert('$mensaje')</script>";
+			}
+			else{				
+				 //header('Location:indexm.php?c=mm01&udni='.@$_GET["udni"].'&mod=1');
+				 print "<script>alert('los datos seleccionados no son los correctos')</script>";
+			}
+			
+			//$this->Modmarca->GuardaInsumo($Marca);						
+			header('Location:indexm.php?c=mm01&udni='.@$_GET["udni"].'&mod=1');
+			
+           // print "<script>alert('$mensaje')</script>";
+					   	
+            require 'view/principal/header.php';
+            require 'view/principal/principal.php';
+            require 'view/mantenimiento/adminmodmarca.php';
+            require 'view/principal/footer.php';
+        }	
+				
+					
+}
+?>

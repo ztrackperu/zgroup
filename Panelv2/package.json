@@ -1,0 +1,56 @@
+{
+  "name": "panelv2",
+  "version": "1.0.0",
+  "description": "Intranet ZGROUP",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --config src/build/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://devzgroup@bitbucket.org/desarrollo_zgroup/panelv2.git"
+  },
+  "author": "ZGROUP",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/desarrollo_zgroup/panelv2#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-select": "^1.12.2",
+    "datatables": "^1.10.13",
+    "font-awesome": "^4.7.0",
+    "govpredict-morris": "^0.5.1",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jquery.maskedinput": "^1.4.1",
+    "jsrender": "^0.9.84",
+    "lodash": "^4.17.4",
+    "metismenu": "^2.7.0",
+    "moment": "^2.18.1",
+    "morris.js": "^0.5.0",
+    "select2": "^4.0.3",
+    "syntaxhighlighter": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "img-loader": "^2.0.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.5",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1"
+  }
+}
