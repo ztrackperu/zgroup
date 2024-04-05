@@ -1,7 +1,7 @@
 <?php 
 
 class Buscador {
-var $host='localhost', $user='root', $pass="root",$db="visionsalud",$c_Servidor="Se conecto correctamente",
+var $host='localhost:33066', $user='root', $pass="root",$db="visionsalud",$c_Servidor="Se conecto correctamente",
 $i_Servidor="No se conecto con el servidor",$c_DB="Se conecto con la BD",$i_DB="No se conecto con la BD"; 
 
 

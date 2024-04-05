@@ -16,7 +16,7 @@ require_once 'model/login/loginM.php';
 class LoginController{
 	    
 	public function __CONSTRUCT(){
-		session_start();
+		session_start(); 
 		$this->login = new Login();
 		$this->model = new Procesosasig();
 		$this->maestrosinvM = new Maestrosinv();

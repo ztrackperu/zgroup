@@ -152,7 +152,7 @@ $pdf->Ln(8);
 //$pdf->Image('logo_pb1.png',10,8,33); //la imagen la esta llamando del controlador-cambiaruta
 										//'logo_pb2.png',10,8,33 10left,8top,33tamaño
 //$pdf->Image($c_nserie.'-1'.'.jpg',30,70,50); 
-//$pdf->Image('http://localhost:5050//PanelPruebas/MVC_Vista/Digital/images/'.$c_nserie.'-1'.'.jpg',30,70,50,0);
+//$pdf->Image('http://localhost:33066:5050//PanelPruebas/MVC_Vista/Digital/images/'.$c_nserie.'-1'.'.jpg',30,70,50,0);
 $pdf->SetFont('Arial','B',10);
 $resultado2=listaFotosEquiposM($c_nserie);
 		$j=0;

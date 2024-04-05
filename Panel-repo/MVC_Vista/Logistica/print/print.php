@@ -16,7 +16,7 @@ function Header()
 }
 
 //Connect to database
-mysql_connect('localhost','root','1234');
+mysql_connect('localhost:33066','root','1234');
 mysql_select_db('mistura_final');
 
 $pdf=new PDF();

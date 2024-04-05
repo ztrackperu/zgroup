@@ -23,7 +23,7 @@ function Header()
 //Connect to database
 //$idusuario=$_GET['acc'];
 //$idempleado=$_GET['udni'];
-/*mysql_connect('localhost','zgroupco','zgroup@@@');
+/*mysql_connect('localhost:33066','zgroupco','zgroup@@@');
 mysql_select_db('zgroupco_bdzgroup');*/
 
 //$pdf=new PDF('P','mm','A4'); 

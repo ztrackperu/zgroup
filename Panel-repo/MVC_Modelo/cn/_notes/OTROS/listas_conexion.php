@@ -15,7 +15,7 @@ class Conexion {
     public static $numRows = 0;
     public static function OpenConexion() {
         try {
-            self::$cnn = new mysqli("localhost","root","334125","zgroup");
+            self::$cnn = new mysqli("localhost:33066","root","334125","zgroup");
             if (mysqli_connect_errno ()) {
                 self :: $StateConexion = FALSE;
                 throw new Exception("Error Al Conectarse a la Base de Datos: " . mysqli_connect_error());

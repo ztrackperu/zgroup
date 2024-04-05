@@ -16,7 +16,7 @@ function Header()
 }
 
 //Connect to database
-mysql_connect('localhost','zgroupco_bdz','1Jn4w3yf0U');
+mysql_connect('localhost:33066','zgroupco_bdz','1Jn4w3yf0U');
 mysql_select_db('zgroupco_bdzgroup');
 
 $pdf=new PDF();

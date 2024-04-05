@@ -17,7 +17,7 @@ function Header()
 }
 
 //Connect to database
-mysql_connect('localhost','root','1234');
+mysql_connect('localhost:33066','root','1234');
 mysql_select_db('zgroup');
 //$idusuario=$_GET['acc'];
 //$idempleado=$_GET['udni'];

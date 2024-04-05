@@ -12,7 +12,7 @@ $ruc=$_REQUEST['txtruc'];
 //   QuitarXML($RUCTXT.'.txt');
 //   QiotarLinesBlancas($RUCTXT.'.txt');
 //
-//$con=mysqli_connect("localhost","root","1234","zgroup");
+//$con=mysqli_connect("localhost:33066","root","1234","zgroup");
 // 
 //if (mysqli_connect_errno())
 //  {

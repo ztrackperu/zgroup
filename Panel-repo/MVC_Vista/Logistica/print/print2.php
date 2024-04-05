@@ -63,11 +63,11 @@ function Header()
 }
 
 //Connect to database
-/*mysql_connect('localhost','root','1234');
+/*mysql_connect('localhost:33066','root','1234');
 mysql_select_db('zgroup');*/
 //$idusuario=$_GET['acc'];
 //$idempleado=$_GET['udni'];
-mysql_connect('localhost','zgroupco_bdz','1Jn4w3yf0U');
+mysql_connect('localhost:33066','zgroupco_bdz','1Jn4w3yf0U');
 mysql_select_db('zgroupco_bdzgroup');
 $pdf=new PDF('P','mm','A4'); 
 //$dimensiones=array (80,120);

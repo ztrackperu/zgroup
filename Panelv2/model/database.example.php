@@ -1,16 +1,16 @@
 <?php
 class Database{
     public static function Conectar(){
-        //$pdo = new PDO('mysql:host=localhost;dbname=colegio;charset=utf8', 'root', '');
+        //$pdo = new PDO('mysql:host=localhost:33066;dbname=colegio;charset=utf8', 'root', '');
         // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		/*
 		Desde Host
-		$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 		Servidor local
 		$db = 'D:\DBZPRUEBAv2\DBZPRUEBA.mdb';
 		*/
 		try {
-			$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+			$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 			$pdo = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)};DBQ=$db;Uid='';Pwd=CIAD876");
 			return $pdo;
 		} catch (PDOException $e) {
@@ -19,7 +19,7 @@ class Database{
     }
 	
 	public static function ConectarPruebas(){
-		$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 		$pdo = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)};DBQ=$db;Uid='';Pwd=CIAD876");	
         return $pdo;
     }
@@ -45,7 +45,7 @@ class Database{
     }
 	
 	public static function ConectarMySQL(){	   
-        $pdo = new PDO('mysql:host=localhost;dbname=zgroup;charset=utf8', 'root', ''); //servidor
+        $pdo = new PDO('mysql:host=localhost:33066;dbname=zgroup;charset=utf8', 'root', ''); //servidor
         //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		$pdo->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, PDO::ERRMODE_EXCEPTION);		
         return $pdo;

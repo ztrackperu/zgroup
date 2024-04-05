@@ -4,7 +4,7 @@ $defconexion = true;
 
 function conectarBD()
 {
-   $host_conexion="localhost";
+   $host_conexion="localhost:33066";
    $login_conexion="root";
    $passwd_conexion="1234";
    $db_conexion="bdventas";

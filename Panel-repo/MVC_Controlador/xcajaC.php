@@ -332,7 +332,7 @@ if($_GET['acc']=='updatecobro'){
 		$nrofact=$itemfac['PE_NDOC'];
 		$nrocoti=$itemcr['c_nroped'];
 		$xxx=$nrofact.'-'.$nrocoti;
-		$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 // Se define la cadena de conexión
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
@@ -3123,7 +3123,7 @@ if($_GET["acc"] == "vercronograma") // MOSTRAR: Formulario Nuevo Registro
 		$znrocoti=$zitemcr['c_nroped'];
 		//$xxx=$nrofact.'-'.$nrocoti;
 		//UpdateUpdatecobroanuladaM($znrofact,$znrocoti);
-			$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+			$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
 // Se realiza la conexón con los datos especificados anteriormente
@@ -3150,7 +3150,7 @@ $sql="update pedi_cronograma set c_swcob='0',c_nrofac='' where c_nroped='$znroco
 		$xxx=$nrofact.'-'.$nrocoti;
 		UpdateUpdatecobroM($nrofact,$nrocoti);
 		//FALTA OPTIMIZAR ESTA LINEAS DE CODIGO.
-		$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
 // Se realiza la conexón con los datos especificados anteriormente
@@ -3979,7 +3979,7 @@ if($_REQUEST["txtruc"]!=""){
    QuitarXML($RUCTXT.'.txt');
    QiotarLinesBlancas($RUCTXT.'.txt');
 
-$con=mysqli_connect("localhost","root","334125","zgroup");
+$con=mysqli_connect("localhost:33066","root","334125","zgroup");
  
 if (mysqli_connect_errno())
   {
@@ -4066,7 +4066,7 @@ if($_REQUEST["txtruc"]!=""){
    QuitarXML($RUCTXT.'.txt');
    QiotarLinesBlancas($RUCTXT.'.txt');
 
-$con=mysqli_connect("localhost","root","334125","zgroup");
+$con=mysqli_connect("localhost:33066","root","334125","zgroup");
  
 if (mysqli_connect_errno())
   {

@@ -1,6 +1,6 @@
 <?php
 
-$db = 'D:\Aplicaciones\DBZ\DBZ.mdb';
+$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
 // Se define la cadena de conexión
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";

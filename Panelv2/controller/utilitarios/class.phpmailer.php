@@ -70,7 +70,7 @@ class PHPMailer
      * The From email address for the message.
      * @var string
      */
-    public $From = 'root@localhost';
+    public $From = 'root@localhost:33066';
 
     /**
      * The From name of the message.
@@ -193,7 +193,7 @@ class PHPMailer
      * The hostname to use in the Message-ID header and as default HELO string.
      * If empty, PHPMailer attempts to find one with, in order,
      * $_SERVER['SERVER_NAME'], gethostname(), php_uname('n'), or the value
-     * 'localhost.localdomain'.
+     * 'localhost:33066.localdomain'.
      * @var string
      */
     public $Hostname = '';
@@ -226,7 +226,7 @@ class PHPMailer
      * Hosts will be tried in order.
      * @var string
      */
-    public $Host = 'localhost';
+    public $Host = 'localhost:33066';
 
     /**
      * The default SMTP server port.
@@ -3274,13 +3274,13 @@ class PHPMailer
 
     /**
      * Get the server hostname.
-     * Returns 'localhost.localdomain' if unknown.
+     * Returns 'localhost:33066.localdomain' if unknown.
      * @access protected
      * @return string
      */
     protected function serverHostname()
     {
-        $result = 'localhost.localdomain';
+        $result = 'localhost:33066.localdomain';
         if (!empty($this->Hostname)) {
             $result = $this->Hostname;
         } elseif (isset($_SERVER) and array_key_exists('SERVER_NAME', $_SERVER) and !empty($_SERVER['SERVER_NAME'])) {

@@ -6,7 +6,7 @@ public function __CONSTRUCT()
 	{
 		try
 		{
-			$this->pdo = Database::ConectarMySQL();     
+			$this->pdo = Database::ConectarMySQL();      
 		}
 		catch(Exception $e)
 		{

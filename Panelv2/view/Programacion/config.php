@@ -3,9 +3,9 @@
 
 
 // Datos de conexion a la base de datos
-$servidor='localhost';
+$servidor='localhost:33066';
 $usuario='root';
-$pass='123-3341@$';
+$pass='';
 $bd='zgroup';
 
 // Nos conectamos a la base de datos
