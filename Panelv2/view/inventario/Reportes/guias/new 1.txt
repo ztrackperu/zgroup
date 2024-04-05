@@ -1,0 +1,2 @@
+clasificar el paletizado x numero de envio (cada 20 pallets) (contenedor 1 ...n)---creae prod
+usuario liz---panelv2 

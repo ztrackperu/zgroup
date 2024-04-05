@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Solicitud de confirmación de suscripción</title>
+  <style>
+    table{
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    thead{
+      background: #1748DB;
+      color: #FFF;
+    }
+    .correo_cell{
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body id="mail-main" style="background-color: #f5f5f5;width:100%; font-family: 'Helvetica Neue Light', 'Helvetica Neue Regular', Helvetica, Arial;">
+  <div>
+    <strong>Cotizacion Nº: </strong>%cotizacion%<br/>
+    <strong>Cliente: </strong>%cliente%<br/>
+    <strong>Tipo de Movimiento: </strong>%tipo%<br/>
+    <strong>Ejecutivo de ventas: </strong>%usuario_crea%<br/>
+    <strong>Usuario asigna equipo: </strong>%usuario_asig%<br/>
+  </div>
+  <br/>
+  <br/>
+  <table class="correo_table">
+      <thead class="correo_head">
+        <tr class="correo_head_row">
+          <th class="correo_cell">Asignacion</th>
+          <th class="correo_cell">Producto</th>
+          <th class="correo_cell">Equipo</th>
+          <th class="correo_cell">Cod. Cond</th>
+          <th class="correo_cell">Condicion</th>
+        </tr>
+      </th>
+      <tbody>
+        %contenido%
+      </tbody>
+  </table>
+</body>
+
+</html>
