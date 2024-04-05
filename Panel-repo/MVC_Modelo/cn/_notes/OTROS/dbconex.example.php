@@ -1,5 +1,5 @@
 ﻿<?php ini_set('memory_limit', '1024M');
-$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 //$db = 'C:\zgroup\DBZ.mdb';
 // Se define la cadena de conexión
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};

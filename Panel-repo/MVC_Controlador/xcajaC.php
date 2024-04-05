@@ -332,7 +332,7 @@ if($_GET['acc']=='updatecobro'){
 		$nrofact=$itemfac['PE_NDOC'];
 		$nrocoti=$itemcr['c_nroped'];
 		$xxx=$nrofact.'-'.$nrocoti;
-		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 // Se define la cadena de conexión
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
@@ -3123,7 +3123,7 @@ if($_GET["acc"] == "vercronograma") // MOSTRAR: Formulario Nuevo Registro
 		$znrocoti=$zitemcr['c_nroped'];
 		//$xxx=$nrofact.'-'.$nrocoti;
 		//UpdateUpdatecobroanuladaM($znrofact,$znrocoti);
-			$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+			$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
 // Se realiza la conexón con los datos especificados anteriormente
@@ -3150,7 +3150,7 @@ $sql="update pedi_cronograma set c_swcob='0',c_nrofac='' where c_nroped='$znroco
 		$xxx=$nrofact.'-'.$nrocoti;
 		UpdateUpdatecobroM($nrofact,$nrocoti);
 		//FALTA OPTIMIZAR ESTA LINEAS DE CODIGO.
-		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 $dsn = "DRIVER={Microsoft Access Driver (*.mdb)};
 DBQ=$db";
 // Se realiza la conexón con los datos especificados anteriormente

@@ -5,8 +5,8 @@ class Database
     {
         //$pdo = new PDO('mysql:host=localhost:33066;dbname=colegio;charset=utf8', 'root', '');
        // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);	
-	    //  $db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
-		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';	
+	    //  $db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';	
 		$pdo = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)};DBQ=$db;Uid='';Pwd=CIAD876");	
 		
         return $pdo;

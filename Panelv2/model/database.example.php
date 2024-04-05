@@ -5,12 +5,12 @@ class Database{
         // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		/*
 		Desde Host
-		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 		Servidor local
 		$db = 'D:\DBZPRUEBAv2\DBZPRUEBA.mdb';
 		*/
 		try {
-			$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+			$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 			$pdo = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)};DBQ=$db;Uid='';Pwd=CIAD876");
 			return $pdo;
 		} catch (PDOException $e) {
@@ -19,7 +19,7 @@ class Database{
     }
 	
 	public static function ConectarPruebas(){
-		$db = 'C:\xampp\htdocs\public\bd\DBZ.mdb';
+		$db = 'C:\xampp\htdocs\test\luis\Access\DBZ.mdb';
 		$pdo = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)};DBQ=$db;Uid='';Pwd=CIAD876");	
         return $pdo;
     }
