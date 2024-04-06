@@ -52,8 +52,7 @@ document.oncontextmenu=inhabilitar
                 echo "No tiene permiso para acceder a esa Sección, Ingrese Nuevamente. <br />";
             }?><?php */?>
             
-                            
-                      
+                                 
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -98,9 +97,6 @@ document.oncontextmenu=inhabilitar
                                     </div>
                                 </div>    
                             </form>     
-
-
-
                         </div>                     
                     </div>  
         </div>
