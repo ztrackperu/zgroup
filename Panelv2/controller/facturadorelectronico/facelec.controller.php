@@ -273,13 +273,14 @@ class faceleccontroller{
             require 'view/contabilidad/CajaChica.php';
             require 'view/principal/footer.php';
         }
-		
+		// aqui esta la refrencia para cargar la vista 
 	 public function ProductosForm(){
             //$c_numped=$_REQUEST['c_numped'];
            // $ListarLE=$this->model->ListarLEM();		
             require 'view/principal/header.php';
             require 'view/principal/principal.php';
-            require 'view/facturadorelectronico/RegistrarInsumo.php';
+			// aqui esta el formulario
+            require 'view/facturadorelectronico/RegistrarInsumo.php'; 
             require 'view/principal/footer.php';
         }		
 		

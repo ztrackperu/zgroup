@@ -6,6 +6,9 @@
 </head>
 
 <body>
+<?php 
+echo "aqui estamos";
+?>
 <form id="form1" name="form1" method="post" action="?c=05&a=RegistroInsumos&mod=<?php echo $_GET['mod']; ?>&udni=<?php echo $udni; ?>">
   <table width="756" border="0" cellspacing="1" cellpadding="1">
     <tr>
@@ -24,7 +27,9 @@
       <td><label for="select"></label>
         <select name="unidad" id="unidad" class="form-control input-sm">
                     <option value="000">.:SELECCIONE:.</option>
-                    <?php foreach($this->model->ListaTipoProductoM() as $a):	 ?>
+                    <?php 
+                    foreach($this->model->ListaTipoProductoM() as $a):	 
+                    ?>
                     <option value="<?php echo $a->C_NUMITM; ?>">
                       <?php echo $a->C_DESITM; ?> </option>
                     <?php  endforeach;	 ?>

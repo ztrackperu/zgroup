@@ -26,6 +26,7 @@ else
 	if($c == '04'){
     $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'ExportarCajaChica';
 	}
+    //la vista de cerear insumos esta referencia aqui  ->ProductosForm
 	if($c == '05'){
     $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'ProductosForm';
 	}
@@ -38,6 +39,7 @@ else
 	}	*/			
     // Instanciamos el controlador RegistroCotizaciones
     require_once "controller/facturadorelectronico/$controller.controller.php";
+    //controller/facturadorelectronico/facelec.controller.php   ->ProductosForm
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     
