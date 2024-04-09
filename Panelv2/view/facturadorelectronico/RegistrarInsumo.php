@@ -22,7 +22,7 @@ $data2 = json_decode($resultadoEX1);
 //echo $data2->data->token ;
 
 
-$url2 = "http://161.132.206.104/apiaccess/dettabla/ListaTipoProductoM.php";
+$url2 = "http://161.132.206.104/apiaccess/dettabla/ListaUnidadM.php";
 
 $datos1 = [
     "sql" => "oli",
