@@ -308,7 +308,7 @@ $data2 = json_decode($resultadoEX1);
 echo $resultadoEX1;
 //echo $data2->data->token ;
 
-			 $idcodi = $data2->IN_CODI;
+			 $idcodi = $data2[0]->IN_CODI;
 			 echo  " aqui va el dato : ".$idcodi;
 			/*
 			$correlativoid = $this->model->maxProductoM();
