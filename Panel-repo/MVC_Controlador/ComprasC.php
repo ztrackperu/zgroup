@@ -24,8 +24,10 @@ if($_GET["acc"] == "formos") // MOSTRAR: Formulario Nuevo Registro
 	$resultado=Obtener_UsuarioM($udni);
 	if($cont>=15){
 		$mensaje="HAY ".$cont." ORDENES PENDIENTES POR APROBAR...!";
-		print "<script>alert('$mensaje')</script>";			
+		print "
+		<script>alert('$mensaje')</script>";			
 	}
+	// la vista del formulario de nuevo registro
 	include('../MVC_Vista/Compras/Regodc.php');	
 }
 

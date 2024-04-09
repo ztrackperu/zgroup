@@ -1263,7 +1263,7 @@ function regresar(){
 
 </head>
 <body>
-    <strong align="center">ORDEN DE COMPRA.  =&gt;<?php echo $_GET['udni'];  ?></strong>
+    <strong align="center">ORDEN DE COMPRA. Luis ok =&gt;<?php echo $_GET['udni'];  ?></strong>
     
     <form id="form1" name="form1" method="post" action="../MVC_Controlador/ComprasC.php?acc=grabaroc&mod=<?php echo $_GET['mod'] ?>&udni=<?php echo $_GET['udni']; ?>">
         <fieldset class="fieldset legend">
