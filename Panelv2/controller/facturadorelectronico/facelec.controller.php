@@ -289,7 +289,7 @@ class faceleccontroller{
            // $ListarLE=$this->model->ListarLEM();	
 		   
 		  //  $Producto = new FacElectonica();
-		  $url1 = "http://161.132.206.104/apiaccess/dettabla/maxProductoM.php";
+		  $url1 = "http://161.132.206.104/apiaccess/invmae/maxProductoM.php";
 $datos = [
     "sql" => "oli",
 ];
