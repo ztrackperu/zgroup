@@ -21,7 +21,7 @@ function eliminarUsuario(obj){
 
 <script>
 
-function cambiaAlmacen(){
+function cambiaAlmacen(){ 
 	document.Frmregcoti.c_codalm.value=document.Frmregcoti.almacen.options[document.Frmregcoti.almacen.selectedIndex].value;	
 }
 
@@ -817,7 +817,7 @@ function abrirmodalProd2(){
 
 <div class="panel panel-primary">
   <!-- Default panel contents -->
-  <div class="panel-heading">REGISTRO DE NOTA DE INGRESO DE O/C. <?php echo $c_numeoc; ?></div>
+  <div class="panel-heading">REGISTRO DE NOTA DE INGRESO Luis ok  DE O/C. <?php echo $c_numeoc; ?></div>
  <div>   
  
  <!--modal de ver equipos-->
