@@ -309,7 +309,7 @@ echo $resultadoEX1;
 //echo $data2->data->token ;
 
 			 $idcodi = $data2->IN_CODI;
-			 
+			 echo  " aqui va el dato : ".$idcodi;
 			/*
 			$correlativoid = $this->model->maxProductoM();
             if(!empty($correlativoid)){
