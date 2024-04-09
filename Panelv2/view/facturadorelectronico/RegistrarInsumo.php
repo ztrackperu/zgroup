@@ -18,7 +18,7 @@ $contexto = stream_context_create($opciones);
 $resultadoEX1 = file_get_contents($url1, false, $contexto);
 //$data1 = json_decode($data);
 $data2 = json_decode($resultadoEX1);
-echo $resultadoEX1;
+//echo $resultadoEX1;
 //echo $data2->data->token ;
 
 
@@ -54,7 +54,8 @@ echo $resultadoEX1;
         <select name="unidad" id="unidad" class="form-control input-sm">
                     <option value="000">.:SELECCIONE:.</option>
                     <?php 
-                    foreach($this->model->ListaTipoProductoM() as $a):	 
+                    //foreach($this->model->ListaTipoProductoM() as $a):	 
+                    foreach($data2 as $a):
                     ?>
                     <option value="<?php echo $a->C_NUMITM; ?>">
                       <?php echo $a->C_DESITM; ?> </option>
