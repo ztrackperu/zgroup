@@ -1,7 +1,7 @@
 <?php 
 
 
-$url1 = "http://http://161.132.206.104/apiaccess/dettabla/ListaTipoProductoM.php";
+$url1 = "http://161.132.206.104/apiaccess/dettabla/ListaTipoProductoM.php";
 
 $datos = [
     "sql" => "oli",
