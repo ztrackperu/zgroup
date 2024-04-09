@@ -378,7 +378,7 @@ class faceleccontroller{
 			$Producto->c_equipo  ='3';
 			$Producto->c_nomgen  ='';
 
-			
+			$this->model->GuardaInsumo($Producto);
 			$urlx = "http://161.132.206.104/apiaccess/invmae/GuardaInsumo.php";
 			$datosx = [
 				"sql" => $Producto,
@@ -396,23 +396,23 @@ class faceleccontroller{
 			//$data1 = json_decode($data);
 			$datax2 = json_decode($resultadoEXx);
 
-			echo "aqui va :";
-			var_dump($resultadoEXx);
-			//$this->model->GuardaInsumo($Producto);	
+			//echo "aqui va :";
+			//var_dump($resultadoEXx);
+				
 			//$mensaje="Registrado Correctamente:". var_dump($Producto);
 			$mensaje="Registrado Correctamente:";
-            //print "<script>alert('$mensaje')</script>";
+            print "<script>alert('$mensaje')</script>";
 			//echo var_dump($Producto);
 
 			
 		   
 		   
-		   	/*
+		   	
             require 'view/principal/header.php';
             require 'view/principal/principal.php';
             require 'view/facturadorelectronico/RegistrarInsumo.php';
             require 'view/principal/footer.php';
-			*/
+			
         }		
 		
 		
