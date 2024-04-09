@@ -290,26 +290,26 @@ class faceleccontroller{
 		   
 		  //  $Producto = new FacElectonica();
 		  $url1 = "http://161.132.206.104/apiaccess/invmae/maxProductoM.php";
-$datos = [
-    "sql" => "oli",
-];
-$opciones = array(
-    "http" => array(
-        "header" => "Content-type: application/json\r\n",
-        "method" => "POST",
-        "content" => json_encode($datos), # Agregar el contenido definido antes
-    ),
-);
-# Preparar petición
-$contexto = stream_context_create($opciones);
-$resultadoEX1 = file_get_contents($url1, false, $contexto);
-//$data1 = json_decode($data);
-$data2 = json_decode($resultadoEX1);
-echo $resultadoEX1;
-//echo $data2->data->token ;
+			$datos = [
+				"sql" => "oli",
+			];
+			$opciones = array(
+				"http" => array(
+					"header" => "Content-type: application/json\r\n",
+					"method" => "POST",
+					"content" => json_encode($datos), # Agregar el contenido definido antes
+				),
+			);
+			# Preparar petición
+			$contexto = stream_context_create($opciones);
+			$resultadoEX1 = file_get_contents($url1, false, $contexto);
+			//$data1 = json_decode($data);
+			$data2 = json_decode($resultadoEX1);
+			//echo $resultadoEX1;
+			//echo $data2->data->token ;
 
 			 $idcodi = $data2[0]->IN_CODI;
-			 echo  " aqui va el dato : ".$idcodi;
+			 //echo  " aqui va el dato : ".$idcodi;
 			/*
 			$correlativoid = $this->model->maxProductoM();
             if(!empty($correlativoid)){
@@ -378,13 +378,31 @@ echo $resultadoEX1;
 			$Producto->c_equipo  ='3';
 			$Producto->c_nomgen  ='';
 
-			//$this->model->GuardaInsumo($Producto);
 			
-			     //$mensaje="Registrado Correctamente:". var_dump($Producto);
-			     $mensaje="Registrado Correctamente:";
-            //print "<script>alert('$mensaje')</script>";
+			$urlx = "http://161.132.206.104/apiaccess/invmae/maxProductoM.php";
+			$datosx = [
+				"sql" => $Producto,
+			];
+			$opcionesx = array(
+				"http" => array(
+					"header" => "Content-type: application/json\r\n",
+					"method" => "POST",
+					"content" => json_encode($datosx), # Agregar el contenido definido antes
+				),
+			);
+			# Preparar petición
+			$contextox = stream_context_create($opcionesx);
+			$resultadoEXx = file_get_contents($urlx, false, $contextox);
+			//$data1 = json_decode($data);
+			$datax2 = json_decode($resultadoEXx);
 
-			echo var_dump($Producto);
+			echo "aqui va :";
+			var_dump($resultadoEXx);
+			//$this->model->GuardaInsumo($Producto);	
+			//$mensaje="Registrado Correctamente:". var_dump($Producto);
+			$mensaje="Registrado Correctamente:";
+            //print "<script>alert('$mensaje')</script>";
+			//echo var_dump($Producto);
 
 			
 		   
