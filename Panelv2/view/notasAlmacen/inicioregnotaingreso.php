@@ -150,7 +150,7 @@ function validar2(){
 
 <div class="panel panel-primary">
   <!-- Default panel contents -->
-  <div class="panel-heading">REGISTRO DE NOTA DE INGRESO</div>
+  <div class="panel-heading">REGISTRO DE NOTA DE INGRESO luis ok </div>
   
  <form class="form-horizontal" id="frm_inicioasig" name="frm_inicioasig" method="post" action="?c=not02&mod=<?php echo $_GET['mod']; ?>&udni=<?php echo $udni; ?>&a=RegistrarNotaIngCompra" >
  <table class="table"> 
