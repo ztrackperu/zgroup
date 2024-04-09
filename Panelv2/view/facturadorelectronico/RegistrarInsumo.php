@@ -22,6 +22,27 @@ $data2 = json_decode($resultadoEX1);
 //echo $data2->data->token ;
 
 
+$url2 = "http://161.132.206.104/apiaccess/dettabla/ListaTipoProductoM.php";
+
+$datos1 = [
+    "sql" => "oli",
+];
+$opciones1 = array(
+    "http" => array(
+        "header" => "Content-type: application/json\r\n",
+        "method" => "POST",
+        "content" => json_encode($datos1), # Agregar el contenido definido antes
+    ),
+);
+# Preparar petición
+$contexto1 = stream_context_create($opciones1);
+$resultadoEX2 = file_get_contents($url2, false, $contexto1);
+//$data1 = json_decode($data);
+$data3 = json_decode($resultadoEX2);
+//echo $resultadoEX1;
+//echo $data2->data->token ;
+
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -89,7 +110,10 @@ $data2 = json_decode($resultadoEX1);
       <td><label for="unidad"></label>
         <select name="unidad" id="unidad" class="form-control input-sm">
                     <option value="000">.:SELECCIONE:.</option>
-                    <?php foreach($this->model->ListaUnidadM() as $a):	 ?>
+                    <?php 
+                    //foreach($this->model->ListaUnidadM() as $a):	
+                      foreach($data3 as $a):	  
+                      ?>
                     <option value="<?php echo $a->TU_CODI; ?>">
                       <?php echo $a->TU_DESC; ?> </option>
                     <?php  endforeach;	 ?>

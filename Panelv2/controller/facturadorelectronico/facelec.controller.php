@@ -289,18 +289,38 @@ class faceleccontroller{
            // $ListarLE=$this->model->ListarLEM();	
 		   
 		  //  $Producto = new FacElectonica();
-			 $correlativoid = $this->model->maxProductoM();
+		  $url1 = "http://161.132.206.104/apiaccess/dettabla/maxProductoM.php";
+$datos = [
+    "sql" => "oli",
+];
+$opciones = array(
+    "http" => array(
+        "header" => "Content-type: application/json\r\n",
+        "method" => "POST",
+        "content" => json_encode($datos), # Agregar el contenido definido antes
+    ),
+);
+# Preparar petición
+$contexto = stream_context_create($opciones);
+$resultadoEX1 = file_get_contents($url1, false, $contexto);
+//$data1 = json_decode($data);
+$data2 = json_decode($resultadoEX1);
+//echo $resultadoEX1;
+//echo $data2->data->token ;
+
+			 $idcodi = $data2->IN_CODI;
+			/*
+			$correlativoid = $this->model->maxProductoM();
             if(!empty($correlativoid)){
                 $idcodi = $correlativoid[0]->id;
-				            }
-			
-			 $letras=substr($idcodi,0,5);
-			 $numero=substr($idcodi,5,4)+1;	
+			}
+			*/
 			
 			$letras=substr($idcodi,0,5);
-			
-			$IN_CODI=$letras.$numero;
-			
+			$numero=substr($idcodi,5,4)+1;			
+			$letras=substr($idcodi,0,5);	
+
+			$IN_CODI=$letras.$numero;			
 			$Producto=new FacElectonica();
 			$Producto->IN_CODI  =$IN_CODI;
 			$Producto->IN_ARTI  =strtoupper($_REQUEST['nombre']);
@@ -357,21 +377,23 @@ class faceleccontroller{
 			$Producto->c_equipo  ='3';
 			$Producto->c_nomgen  ='';
 
-			$this->model->GuardaInsumo($Producto);
-			
-			
+			//$this->model->GuardaInsumo($Producto);
 			
 			     //$mensaje="Registrado Correctamente:". var_dump($Producto);
 			     $mensaje="Registrado Correctamente:";
-            print "<script>alert('$mensaje')</script>";
+            //print "<script>alert('$mensaje')</script>";
+
+			echo var_dump($Producto);
+
 			
 		   
 		   
-		   	
+		   	/*
             require 'view/principal/header.php';
             require 'view/principal/principal.php';
             require 'view/facturadorelectronico/RegistrarInsumo.php';
             require 'view/principal/footer.php';
+			*/
         }		
 		
 		
