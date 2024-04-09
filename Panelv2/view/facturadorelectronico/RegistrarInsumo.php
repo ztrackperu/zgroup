@@ -33,7 +33,7 @@ echo $resultadoEX1;
 
 <body>
 <?php 
-echo "aqui estamos zgroup";
+//echo "aqui estamos zgroup";
 ?>
 <form id="form1" name="form1" method="post" action="?c=05&a=RegistroInsumos&mod=<?php echo $_GET['mod']; ?>&udni=<?php echo $udni; ?>">
   <table width="756" border="0" cellspacing="1" cellpadding="1">
