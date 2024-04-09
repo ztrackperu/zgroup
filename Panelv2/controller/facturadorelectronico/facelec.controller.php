@@ -379,7 +379,7 @@ class faceleccontroller{
 			$Producto->c_nomgen  ='';
 
 			
-			$urlx = "http://161.132.206.104/apiaccess/invmae/maxProductoM.php";
+			$urlx = "http://161.132.206.104/apiaccess/invmae/GuardaInsumo.php";
 			$datosx = [
 				"sql" => $Producto,
 			];
