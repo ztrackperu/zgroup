@@ -305,10 +305,11 @@ $contexto = stream_context_create($opciones);
 $resultadoEX1 = file_get_contents($url1, false, $contexto);
 //$data1 = json_decode($data);
 $data2 = json_decode($resultadoEX1);
-//echo $resultadoEX1;
+echo $resultadoEX1;
 //echo $data2->data->token ;
 
 			 $idcodi = $data2->IN_CODI;
+			 
 			/*
 			$correlativoid = $this->model->maxProductoM();
             if(!empty($correlativoid)){
