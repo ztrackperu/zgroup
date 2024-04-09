@@ -1,3 +1,29 @@
+<?php 
+
+
+$url1 = "http://http://161.132.206.104/apiaccess/dettabla/ListaTipoProductoM.php";
+
+$datos = [
+    "sql" => "oli",
+];
+$opciones = array(
+    "http" => array(
+        "header" => "Content-type: application/json\r\n",
+        "method" => "POST",
+        "content" => json_encode($datos), # Agregar el contenido definido antes
+    ),
+);
+# Preparar petición
+$contexto = stream_context_create($opciones);
+$resultadoEX1 = file_get_contents($url1, false, $contexto);
+//$data1 = json_decode($data);
+$data2 = json_decode($resultadoEX1);
+echo $resultadoEX1;
+//echo $data2->data->token ;
+
+
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

@@ -5,7 +5,7 @@ class FacElectonica
 {
 	private $pdo;
     
-	public function __CONSTRUCT()
+	public function __CONSTRUCT() 
 	{
 		try
 		{
@@ -231,6 +231,7 @@ public function detalle_reporte22($FechaInicio,$FechaFin){
 		}
 	}//	
 
+	// este estructura da los datos 
 		public function ListaTipoProductoM()//
 	{
 		try
