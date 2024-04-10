@@ -23,7 +23,7 @@ function pon_prefijo(pref,nombre,dato,dato2,valor,xsw,maquina,equipo) {
 	parent.opener.document.getElementById('codequipo'+val).value=pref;
 	parent.opener.document.getElementById('codigomaquina'+val).value=maquina;
 	parent.opener.document.getElementById('cod_des'+val).value=equipo;
-	parent.opener.document.getElementById('c_desequipo'+val).value=nombre;
+	parent.opener.document.getElementById('c_desequipo'+val).value=nombre; 
 		}
 	parent.window.close();
 }
@@ -64,7 +64,7 @@ $sql="select c_codprd,c_idequipo,c_nserie,in_arti,c_codsit,c_estaresv,c_codsital
 <?php if ($nrs>0) { ?>Leyenda: A=Alquilado | D=Disponible | V=Vendido
 		<table  width="98%"  class="tablaImprimir" cellpadding="0" cellspacing="0" >
 		  <tr>
-			<td width="7%" bgcolor="#999999"><div align="center"><b>Codigo</b></div></td>
+			<td width="7%" bgcolor="#999999"><div align="center"><b>Codigo luis</b></div></td>
 			<td width="40%" bgcolor="#999999"><div align="center"><b>Descripcion</b></div></td>
 			<td width="12%" bgcolor="#999999">DUA</td>
 			<td width="21%" bgcolor="#999999"><div align="center"><b>Serie</b></div></td>
