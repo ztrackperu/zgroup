@@ -830,10 +830,12 @@ return true;
           </tr>
           <tr>
             <td><strong>Codigo Equipo</strong></td>
-            <td><input name="unidad" type="text" required="required"  class="texto" id="unidad" onclick="abreVentana(this.name)" size="35" onkeypress="copiatext()" onblur="copiatext()" /><input name="codigoequipo" type="text" id="codigoequipo" size="5" class="texto" /><strong>Maquina-</strong><input name="codigomaquina" type="text" id="codigomaquina" size="12" class="texto" readOnly /></td>
-            <td><strong>Descripcion Equipo</strong></td>
+            <td><input name="unidad" type="text" required="required"  class="texto" id="unidad" onclick="abreVentana(this.name)" size="35" onkeypress="copiatext()" onblur="copiatext()" />
+			<input name="codigoequipo" type="text" id="codigoequipo" size="5" class="texto" /><strong>Maquina-</strong>
+			<input name="codigomaquina" type="text" id="codigomaquina" size="12" class="texto" readOnly /></td>
+            <td><strong>Descripcion Equipo</strong></td> 
             <td><input name="c_desequipo" type="text"  class="texto" id="c_desequipo" size="35" />
-            <input type="hidden" name="cod_des" id="cod_des" /></td>
+            <input type="hidden" name="cod_des" id="cod_des" /></td> 
 		  </tr>
           <tr>
             <td colspan="4"><hr /></td>

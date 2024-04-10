@@ -14,7 +14,7 @@ function Obtener_UserOTM($udni)
 
 
 
-function ListaTipoConceptoM(){
+function ListaTipoConceptoM(){ 
 include('cn/dbconex.php');
 $sql="select * from conceptos_ot where estado='1' order by descripcion asc";
 $resultado = odbc_exec($cid, $sql)or die("Error: ".odbc_error($cid));

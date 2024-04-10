@@ -19,7 +19,7 @@ if($_GET["acc"] == "regotra") // MOSTRAR: Formulario Nuevo Registro
 				$cantOTG++;
 		   }			
 		}	
-		if($cantOTG<'5510'){
+		if($cantOTG<'5510'){ 
 			echo $cantOTG;
 			include("../MVC_Vista/Ordenes_Trabajo_Servicio/RegistrarOTra.php");			
 		}else{

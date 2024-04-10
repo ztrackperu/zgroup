@@ -23,9 +23,9 @@ function pon_prefijo(pref,nombre,dato,dato2,valor,xsw,maquina,equipo) {
 */
 
 	parent.opener.document.getElementById('unidad'+val).value="campo unidad"; //queda
-	parent.opener.document.getElementById('codigoequipo'+val).value="campo codigoequipo";
+	parent.opener.document.getElementById('codigoequipo'+val).value="campo codigoequipo";// se envia y en el princiapal lo igua a UNIDAD 
 	parent.opener.document.getElementById('codigomaquina'+val).value="campo codigomaquina";//queda
-	parent.opener.document.getElementById('cod_des'+val).value="campo cod_des";
+	parent.opener.document.getElementById('cod_des'+val).value="campo cod_des"; // campo oculto en el principal 
 	parent.opener.document.getElementById('c_desequipo'+val).value="campo c_desequipo";//queda
 
 	}else{

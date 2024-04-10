@@ -15,7 +15,7 @@ if($_GET["acc"] == "ampliacion") // MOSTRAR: Formulario alerta de pendientes por
 	$cuota=$_GET['cuota'];
 	$resul=ObtenermaxcuotaM($coti);
 	foreach($resul as $itemC){
-		$cuo=$itemC['cuota'];
+		$cuo=$itemC['cuota']; 
 	}
 	//$cuota=$_GET['cuota'];
 	$ObtenercotizacionesCab=Ver_CotizacionesC($cli,$coti);
@@ -629,7 +629,7 @@ if($_GET["acc"] == "verccodigosR") // MOSTRAR: Formulario Nuevo Registro
 }
 if($_GET["acc"] == "verccodigosGUIA") // MOSTRAR: Formulario Nuevo Registro
 {
-	include('../MVC_Vista/Cotizaciones/ver_codigosguia.php');
+	include('../MVC_Vista/Cotizaciones/ver_codigosguia.php'); 
 	//include('../MVC_Vista/Cotizaciones/frame_clientes.php');
 }
 if($_GET["acc"] == "verccodigosD") // MOSTRAR: Formulario Nuevo Registro
@@ -649,7 +649,7 @@ if($_GET["acc"] == "framecli") // MOSTRAR: Formulario Nuevo Registro
 
 if($_GET["acc"] == "framecodigosguia") // MOSTRAR: Formulario Nuevo Registro
 {
-	include('../MVC_Vista/Cotizaciones/frame_codigosguia.php');
+	include('../MVC_Vista/Cotizaciones/frame_codigosguia.php'); 
 }
 if($_GET["acc"] == "framecodigos") // MOSTRAR: Formulario Nuevo Registro
 {

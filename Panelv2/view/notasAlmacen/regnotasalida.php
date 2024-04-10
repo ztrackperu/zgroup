@@ -316,7 +316,7 @@ function addRowToTable(num)
 		txtInpb2.setAttribute('size', '3');
 	    txtInpb2.setAttribute('value', can); // iteration included for debug purposes 
 	    txtInpb2.setAttribute('class', 'form-control input-sm'); 
-		txtInpb2.setAttribute('onkeyup','validarcambiocantidad(this.name)');	
+		txtInpb2.setAttribute('onkeyup','validarcambiocantidad(this.name)');	 
 		cell22.appendChild(txtInpb2);		
 
 		var cell3 = row.insertCell(5);
@@ -783,7 +783,7 @@ function abrirmodalProd2(){
 
 <div class="panel panel-primary">
   <!-- Default panel contents -->
-  <div class="panel-heading">REGISTRO DE NOTA DE SALIDA POR ORDEN DE TRABAJO.</div>
+  <div class="panel-heading">REGISTRO DE NOTA DE SALIDA POR ORDEN DE TRABAJO. oka luis </div>
  <div>   
  
  <!--modal de ver equipos-->

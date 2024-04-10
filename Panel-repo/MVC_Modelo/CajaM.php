@@ -1241,7 +1241,7 @@ return $ven;
 
 
 function ListaMonedaM(){
-include('cn/dbconex.php');
+include('cn/dbconex.php'); 
 //$sql="select c_numitm,c_desitm from dettabla where c_codtab='MON' AND C_ESTADO='1'";
 $sql="select tm_codi as c_numitm,tm_desc as c_desitm from tab_mone WHERE tm_esta='1' ";
 
