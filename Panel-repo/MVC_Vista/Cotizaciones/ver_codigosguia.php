@@ -48,9 +48,9 @@ body {
 }
 -->
 </style></head>
-<?php include("dbconex.php"); ?>
+<?php include("dbconex.php"); ?> 
 <body onLoad="buscar()">
-Leyenda: A=Alquilado | D=Disponible 
+Leyenda: A=Alquilado | D=Disponible luis 
 <form name="form1" id="form1" method="post" action="../MVC_Controlador/cajaC.php?acc=framecodigosguia" target="frame_resultado" onSubmit="buscar()">
  <table class="fuente8" align="center" width="95%" class="tablaImprimir">
      <tr>
