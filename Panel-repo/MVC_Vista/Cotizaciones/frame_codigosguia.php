@@ -41,8 +41,10 @@ $xsw=$_POST['xsw'];
 $val=$_REQUEST['hiddenField'];
 $res=$_POST['res'];
 
-if($res=='1'){ $rese='1';}else{$rese='0';}
 
+// $sw es 1 desde el inicio de froma estatica cuando se crea una OT
+if($res=='1'){ $rese='1';}else{$rese='0';}
+// se activa cuando se pone un texto en el input de busqueda 
 if ($descripcion<>"") { $where.=" and c_nserie like '%$descripcion%' "; }
 if($sw=='0'){
 	$sql="select c_codprd,c_idequipo,c_nserie,in_arti,c_codsit,c_estaresv,c_codsitalm,c_refnaci,id_equipo_asignado from 
@@ -64,7 +66,7 @@ $sql="select c_codprd,c_idequipo,c_nserie,in_arti,c_codsit,c_estaresv,c_codsital
 <?php if ($nrs>0) { ?>Leyenda: A=Alquilado | D=Disponible | V=Vendido
 		<table  width="98%"  class="tablaImprimir" cellpadding="0" cellspacing="0" >
 		  <tr>
-			<td width="7%" bgcolor="#999999"><div align="center"><b>Codigo luis</b></div></td>
+			<td width="7%" bgcolor="#999999"><div align="center"><b>Codigo luis</b></div></td> 
 			<td width="40%" bgcolor="#999999"><div align="center"><b>Descripcion</b></div></td>
 			<td width="12%" bgcolor="#999999">DUA</td>
 			<td width="21%" bgcolor="#999999"><div align="center"><b>Serie</b></div></td>
@@ -92,7 +94,7 @@ $sql="select c_codprd,c_idequipo,c_nserie,in_arti,c_codsit,c_estaresv,c_codsital
 					<td><?php echo $Reserva;?></td>
 					<td><div align="center"><?php echo $nif;?></div></td>
 					<td align="center"><?php echo rtrim($maquina);?></td>
-					<td align="center"><?php echo rtrim($dir);?></td>
+					<td align="center"><?php echo rtrim($dir)."jeje";?></td>
 					<td align="center"><div align="center">
                     <a href="javascript:pon_prefijo('<?php echo $codcliente?>','<?php echo $nombre?>','<?php echo $nif?>','<?php echo $dir?>','<?php echo $val ?>','<?php echo $xsw ?>','<?php echo $maquina ?>','<?php echo $equipo ?>')">
 					<?php 
