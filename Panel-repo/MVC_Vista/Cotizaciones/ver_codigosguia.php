@@ -54,7 +54,7 @@ Leyenda: A=Alquilado | D=Disponible luis
 <form name="form1" id="form1" method="post" action="../MVC_Controlador/cajaC.php?acc=framecodigosguia" target="frame_resultado" onSubmit="buscar()">
  <table class="fuente8" align="center" width="95%" class="tablaImprimir">
      <tr>
-  <td width="40%" bgcolor="#CCCCCC" class="busqueda"><?php echo 'INGRESE SERIE DEL EQUIPO:';?>
+  <td width="40%" bgcolor="#CCCCCC" class="busqueda"><?php echo 'INGRESE SERIE DEL EQUIPO: oka';?>
     <label for="codproducto"></label>
     <input type="hidden" name="codproducto" id="codproducto" value="<?php echo $_GET['cod']; ?>">
     <label for="codprod"></label>
