@@ -33,7 +33,7 @@ if($resultado!=NULL)
 <script language="javascript" type="text/javascript" src="../js/autocomplete_LUI.js"></script>
 <script type="text/javascript">
 $().ready(function() {
-	$("#c_refcot").autocomplete("../MVC_Controlador/cajaC.php?acc=cargar_coti_guia", {
+	$("#c_refcot").autocomplete("../MVC_Controlador/cajaC.php?acc=cargar_coti_guia", { 
 		width: 400, 
 		matchContains: true,
 		selectFirst: false
@@ -636,8 +636,8 @@ return true;
 <form id="form1" name="form1" method="post" action="../MVC_Controlador/OrdenTrabajoC.php?acc=registraot">
   <div id="TabbedPanels1" class="TabbedPanels" style="width:1550px"  >
     <ul class="TabbedPanelsTabGroup">
-      <li class="TabbedPanelsTab" tabindex="0">Cabecera OT</li>
-      <li class="TabbedPanelsTab" tabindex="0">Detalle OT</li>
+      <li class="TabbedPanelsTab" tabindex="0">Cabecera OT ok</li>
+      <li class="TabbedPanelsTab" tabindex="0">Detalle OT luis</li>
       <li class="TabbedPanelsTab" tabindex="0">Ver Detalle N/S OT</li>
 </ul>
     <div class="TabbedPanelsContentGroup">
