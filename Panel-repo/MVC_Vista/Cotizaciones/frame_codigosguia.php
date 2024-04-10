@@ -12,12 +12,22 @@
 function pon_prefijo(pref,nombre,dato,dato2,valor,xsw,maquina,equipo) {
 	var val=valor;
 	var unidad='unidad'+valor;
+	//xws ya viene 1 por defecto 
 	if(xsw=='1'){
+/*
 	parent.opener.document.getElementById('unidad'+val).value=dato;
 	parent.opener.document.getElementById('codigoequipo'+val).value=pref;
 	parent.opener.document.getElementById('codigomaquina'+val).value=maquina;
 	parent.opener.document.getElementById('cod_des'+val).value=equipo;
 	parent.opener.document.getElementById('c_desequipo'+val).value=nombre;
+*/
+
+	parent.opener.document.getElementById('unidad'+val).value="campo unidad";
+	parent.opener.document.getElementById('codigoequipo'+val).value="campo codigoequipo";
+	parent.opener.document.getElementById('codigomaquina'+val).value="campo codigomaquina";
+	parent.opener.document.getElementById('cod_des'+val).value="campo cod_des";
+	parent.opener.document.getElementById('c_desequipo'+val).value="campo c_desequipo";
+
 	}else{
 	parent.opener.document.getElementById('codcont'+val).value=dato;
 	parent.opener.document.getElementById('codequipo'+val).value=pref;
@@ -41,7 +51,7 @@ $xsw=$_POST['xsw'];
 $val=$_REQUEST['hiddenField'];
 $res=$_POST['res'];
 
-
+// $xsw es 1 desde el inicio de froma estatica cuando se crea una OT
 // $sw es 1 desde el inicio de froma estatica cuando se crea una OT
 if($res=='1'){ $rese='1';}else{$rese='0';}
 // se activa cuando se pone un texto en el input de busqueda 
