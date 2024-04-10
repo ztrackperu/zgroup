@@ -22,11 +22,11 @@ function pon_prefijo(pref,nombre,dato,dato2,valor,xsw,maquina,equipo) {
 	parent.opener.document.getElementById('c_desequipo'+val).value=nombre;
 */
 
-	parent.opener.document.getElementById('unidad'+val).value="campo unidad";
+	parent.opener.document.getElementById('unidad'+val).value="campo unidad"; //queda
 	parent.opener.document.getElementById('codigoequipo'+val).value="campo codigoequipo";
-	parent.opener.document.getElementById('codigomaquina'+val).value="campo codigomaquina";
+	parent.opener.document.getElementById('codigomaquina'+val).value="campo codigomaquina";//queda
 	parent.opener.document.getElementById('cod_des'+val).value="campo cod_des";
-	parent.opener.document.getElementById('c_desequipo'+val).value="campo c_desequipo";
+	parent.opener.document.getElementById('c_desequipo'+val).value="campo c_desequipo";//queda
 
 	}else{
 	parent.opener.document.getElementById('codcont'+val).value=dato;
