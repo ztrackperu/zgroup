@@ -10,7 +10,7 @@ require_once 'model/notasAlmacen/procesosnotsalM.php';
 
 class ProcesosnotsalController{
     
-    private $model;
+    private $model; 
     
     public function __CONSTRUCT(){
         $this->model = new Procesosnotsal();

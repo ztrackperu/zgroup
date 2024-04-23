@@ -17,7 +17,7 @@ class Procesosnotsal
 	}
 
 	public function ListartransacSalidaM()
-	{
+	{ 
 		try
 		{
 			$result = array();
